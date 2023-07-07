@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-skipped">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">35 methods,  1 skipped,  34 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(8, https://slicsit.novactech.net/404, 404 error | shriram life insurance, 404 error in the website. ...)">shouldAnswerWithTrue(8, https://slicsit.novactech.net/404, 404 error | shriram life insurance, 404 error in the website. ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(15, https://slicsit.novactech.net/reach-us, reach us | shriram life insurance, you can reach us by t...)">shouldAnswerWithTrue(15, https://slicsit.novactech.net/reach-us, reach us | shriram life insurance, you can reach us by t...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(5, https://slicsit.novactech.net/services/aadhaar-ekyc-consent-revoking, aadhaar e-kyc consent revok...)">shouldAnswerWithTrue(5, https://slicsit.novactech.net/services/aadhaar-ekyc-consent-revoking, aadhaar e-kyc consent revok...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(14, https://slicsit.novactech.net/life-insurance/savings-plan, shriram life insurance premium saving...)">shouldAnswerWithTrue(14, https://slicsit.novactech.net/life-insurance/savings-plan, shriram life insurance premium saving...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(24, https://slicsit.novactech.net/legal/do-not-call, do not call | shriram life insurance, do not ca...)">shouldAnswerWithTrue(24, https://slicsit.novactech.net/legal/do-not-call, do not call | shriram life insurance, do not ca...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(17, https://slicsit.novactech.net/services/grievance-redressal, grievance redressal | shriram life i...)">shouldAnswerWithTrue(17, https://slicsit.novactech.net/services/grievance-redressal, grievance redressal | shriram life i...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(23, https://slicsit.novactech.net/discover/careers, careers | shriram life insurance, explore our sh...)">shouldAnswerWithTrue(23, https://slicsit.novactech.net/discover/careers, careers | shriram life insurance, explore our sh...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(34, https://slicsit.novactech.net/hlv-calculator, new hlv calculator | shriram life insurance, get t...)">shouldAnswerWithTrue(34, https://slicsit.novactech.net/hlv-calculator, new hlv calculator | shriram life insurance, get t...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(3, https://slicsit.novactech.net/contact-us/service-request, service request | shriram life insuranc...)">shouldAnswerWithTrue(3, https://slicsit.novactech.net/contact-us/service-request, service request | shriram life insuranc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(7, https://slicsit.novactech.net/legal/terms-and-conditions, terms and conditions | shriram life ins...)">shouldAnswerWithTrue(7, https://slicsit.novactech.net/legal/terms-and-conditions, terms and conditions | shriram life ins...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(21, https://slicsit.novactech.net/discover/media/press-coverage, press coverage | shriram life insur...)">shouldAnswerWithTrue(21, https://slicsit.novactech.net/discover/media/press-coverage, press coverage | shriram life insur...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(12, https://slicsit.novactech.net/life-insurance/super-income-plan, super income plan in india | shr...)">shouldAnswerWithTrue(12, https://slicsit.novactech.net/life-insurance/super-income-plan, super income plan in india | shr...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(10, https://slicsit.novactech.net/services/nav-history, nav history | shriram life insurance, nav hi...)">shouldAnswerWithTrue(10, https://slicsit.novactech.net/services/nav-history, nav history | shriram life insurance, nav hi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(35, https://slicsit.novactech.net/discover/about-us/public-disclosures, public disclosures | shriram...)">shouldAnswerWithTrue(35, https://slicsit.novactech.net/discover/about-us/public-disclosures, public disclosures | shriram...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(19, https://slicsit.novactech.net/services/nach-mandate-deactivation, nach mandate deactivation | sh...)">shouldAnswerWithTrue(19, https://slicsit.novactech.net/services/nach-mandate-deactivation, nach mandate deactivation | sh...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(6, https://slicsit.novactech.net/testimonials/customer-testimonials, customer testimonials | shriram...)">shouldAnswerWithTrue(6, https://slicsit.novactech.net/testimonials/customer-testimonials, customer testimonials | shriram...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(25, https://slicsit.novactech.net/legal/data-privacy-policy, data privacy policy | shriram life insu...)">shouldAnswerWithTrue(25, https://slicsit.novactech.net/legal/data-privacy-policy, data privacy policy | shriram life insu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(30, https://slicsit.novactech.net/blog, affordable insurance plan &amp; policies in india | shriram life...)">shouldAnswerWithTrue(30, https://slicsit.novactech.net/blog, affordable insurance plan & policies in india | shriram life...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(20, https://slicsit.novactech.net/services/online-dgh-submission, online dgh submission | shriram li...)">shouldAnswerWithTrue(20, https://slicsit.novactech.net/services/online-dgh-submission, online dgh submission | shriram li...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(18, https://slicsit.novactech.net/services/register-for-whatsapp, register for whatsapp | shriram li...)">shouldAnswerWithTrue(18, https://slicsit.novactech.net/services/register-for-whatsapp, register for whatsapp | shriram li...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(4, https://slicsit.novactech.net/contact-us/sales-service-enquiry, sales and service enquiry | shrir...)">shouldAnswerWithTrue(4, https://slicsit.novactech.net/contact-us/sales-service-enquiry, sales and service enquiry | shrir...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(22, https://slicsit.novactech.net/discover/videos, videos | shriram life insurance, explore our life...)">shouldAnswerWithTrue(22, https://slicsit.novactech.net/discover/videos, videos | shriram life insurance, explore our life...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(1, https://slicsit.novactech.net/, get life insurance plans &amp; policies online | shriram life insuran...)">shouldAnswerWithTrue(1, https://slicsit.novactech.net/, get life insurance plans & policies online | shriram life insuran...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(13, https://slicsit.novactech.net/life-insurance/assured-income-plan, assured income plan in india |...)">shouldAnswerWithTrue(13, https://slicsit.novactech.net/life-insurance/assured-income-plan, assured income plan in india |...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(31, https://slicsit.novactech.net/smoking-calculator, smoking calculator | shriram life insurance, s...)">shouldAnswerWithTrue(31, https://slicsit.novactech.net/smoking-calculator, smoking calculator | shriram life insurance, s...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(2, https://slicsit.novactech.net/contact-us/faqs, frequently asked questions | shriram life insuranc...)">shouldAnswerWithTrue(2, https://slicsit.novactech.net/contact-us/faqs, frequently asked questions | shriram life insuranc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(26, https://slicsit.novactech.net/nri/nri-zone, nri zone | shriram life insurance, shriram life insu...)">shouldAnswerWithTrue(26, https://slicsit.novactech.net/nri/nri-zone, nri zone | shriram life insurance, shriram life insu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(28, https://slicsit.novactech.net/life-insurance/retirement-calculator, retirement calculator | shri...)">shouldAnswerWithTrue(28, https://slicsit.novactech.net/life-insurance/retirement-calculator, retirement calculator | shri...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(16, https://slicsit.novactech.net/contact-us/branches, branch locator | shriram life insurance, loca...)">shouldAnswerWithTrue(16, https://slicsit.novactech.net/contact-us/branches, branch locator | shriram life insurance, loca...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(32, https://slicsit.novactech.net/bmi-calculator, bmi calculator | shriram life insurance, our healt...)">shouldAnswerWithTrue(32, https://slicsit.novactech.net/bmi-calculator, bmi calculator | shriram life insurance, our healt...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(11, https://slicsit.novactech.net/legal/become-an-advisor, become an advisor | shriram life insuranc...)">shouldAnswerWithTrue(11, https://slicsit.novactech.net/legal/become-an-advisor, become an advisor | shriram life insuranc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(33, https://slicsit.novactech.net/double-your-money-calculator, double your money calculator | shrir...)">shouldAnswerWithTrue(33, https://slicsit.novactech.net/double-your-money-calculator, double your money calculator | shrir...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(29, https://slicsit.novactech.net/life-insurance/child-plan-calculator, child plan calculator | shri...)">shouldAnswerWithTrue(29, https://slicsit.novactech.net/life-insurance/child-plan-calculator, child plan calculator | shri...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(9, https://slicsit.novactech.net/services/unclaimed-amounts, unclaimed amounts | shriram life insura...)">shouldAnswerWithTrue(9, https://slicsit.novactech.net/services/unclaimed-amounts, unclaimed amounts | shriram life insura...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.samplepro.project.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue(27, https://slicsit.novactech.net/life-insurance/savings-plan-calculator, savings plan calculator | ...)">shouldAnswerWithTrue(27, https://slicsit.novactech.net/life-insurance/savings-plan-calculator, savings plan calculator | ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.samplepro.project.AppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(8, https://slicsit.novactech.net/404, 404 error | shriram life insurance, 404 error in the website. ...)">
+                  </a> <!-- shouldAnswerWithTrue(8, https://slicsit.novactech.net/404, 404 error | shriram life insurance, 404 error in the website. ...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(8, https://slicsit.novactech.net/404, 404 error | shriram life insurance, 404 error in the website. you will be redirected to life insurance policy pages., dffdsf, 404 error)</span>
+                  <div class="stack-trace">org.testng.SkipException: skip
+	at com.samplepro.project.AppTest.shouldAnswerWithTrue(AppTest.java:89)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.samplepro.project.AppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(15, https://slicsit.novactech.net/reach-us, reach us | shriram life insurance, you can reach us by t...)">
+                  </a> <!-- shouldAnswerWithTrue(15, https://slicsit.novactech.net/reach-us, reach us | shriram life insurance, you can reach us by t...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(15, https://slicsit.novactech.net/reach-us, reach us | shriram life insurance, you can reach us by toll-free numbers or through branch, dffdsf, reach us)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(5, https://slicsit.novactech.net/services/aadhaar-ekyc-consent-revoking, aadhaar e-kyc consent revok...)">
+                  </a> <!-- shouldAnswerWithTrue(5, https://slicsit.novactech.net/services/aadhaar-ekyc-consent-revoking, aadhaar e-kyc consent revok...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(5, https://slicsit.novactech.net/services/aadhaar-ekyc-consent-revoking, aadhaar e-kyc consent revoking | shriram life insurance, aadhaar e-kyc consent revoking by shriram life insurance, dffdsf, aadhaar e-kyc consent revoking)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(14, https://slicsit.novactech.net/life-insurance/savings-plan, shriram life insurance premium saving...)">
+                  </a> <!-- shouldAnswerWithTrue(14, https://slicsit.novactech.net/life-insurance/savings-plan, shriram life insurance premium saving...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(14, https://slicsit.novactech.net/life-insurance/savings-plan, shriram life insurance premium savings plans in india, buy shriram life insurance premium savings plans and track policy online. can opt for riders add-ons. get covered with tax benefits u/s 80c, dffdsf, life insurance savings plan)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(24, https://slicsit.novactech.net/legal/do-not-call, do not call | shriram life insurance, do not ca...)">
+                  </a> <!-- shouldAnswerWithTrue(24, https://slicsit.novactech.net/legal/do-not-call, do not call | shriram life insurance, do not ca...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(24, https://slicsit.novactech.net/legal/do-not-call, do not call | shriram life insurance, do not call by shriram life insurance, dffdsf, do not call)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(17, https://slicsit.novactech.net/services/grievance-redressal, grievance redressal | shriram life i...)">
+                  </a> <!-- shouldAnswerWithTrue(17, https://slicsit.novactech.net/services/grievance-redressal, grievance redressal | shriram life i...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(17, https://slicsit.novactech.net/services/grievance-redressal, grievance redressal | shriram life insurance, grievance redressal by shriram life insurance, dffdsf, grievance redressal contact us)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(23, https://slicsit.novactech.net/discover/careers, careers | shriram life insurance, explore our sh...)">
+                  </a> <!-- shouldAnswerWithTrue(23, https://slicsit.novactech.net/discover/careers, careers | shriram life insurance, explore our sh...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(23, https://slicsit.novactech.net/discover/careers, careers | shriram life insurance, explore our shriram life careers, dffdsf, careers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(34, https://slicsit.novactech.net/hlv-calculator, new hlv calculator | shriram life insurance, get t...)">
+                  </a> <!-- shouldAnswerWithTrue(34, https://slicsit.novactech.net/hlv-calculator, new hlv calculator | shriram life insurance, get t...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(34, https://slicsit.novactech.net/hlv-calculator, new hlv calculator | shriram life insurance, get to know our new hlv calculator by checking the innovative tool., No excel data found, new hlv)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(3, https://slicsit.novactech.net/contact-us/service-request, service request | shriram life insuranc...)">
+                  </a> <!-- shouldAnswerWithTrue(3, https://slicsit.novactech.net/contact-us/service-request, service request | shriram life insuranc...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(3, https://slicsit.novactech.net/contact-us/service-request, service request | shriram life insurance, speak to shriram life insurance company's experts for all your service requests. our branch locator helps you to find the nearest branch across india., dffdsf, service request)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(7, https://slicsit.novactech.net/legal/terms-and-conditions, terms and conditions | shriram life ins...)">
+                  </a> <!-- shouldAnswerWithTrue(7, https://slicsit.novactech.net/legal/terms-and-conditions, terms and conditions | shriram life ins...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(7, https://slicsit.novactech.net/legal/terms-and-conditions, terms and conditions | shriram life insurance, get to know the shriram life terms and conditions, dffdsf, terms and conditions)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(21, https://slicsit.novactech.net/discover/media/press-coverage, press coverage | shriram life insur...)">
+                  </a> <!-- shouldAnswerWithTrue(21, https://slicsit.novactech.net/discover/media/press-coverage, press coverage | shriram life insur...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(21, https://slicsit.novactech.net/discover/media/press-coverage, press coverage | shriram life insurance, press coverage by shriram life insurance, dffdsf, media press coverage)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(12, https://slicsit.novactech.net/life-insurance/super-income-plan, super income plan in india | shr...)">
+                  </a> <!-- shouldAnswerWithTrue(12, https://slicsit.novactech.net/life-insurance/super-income-plan, super income plan in india | shr...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(12, https://slicsit.novactech.net/life-insurance/super-income-plan, super income plan in india | shriram life insurance, buy super income life insurance premium plan and track policy online. riders add-ons. get covered up to 75 years and also avail tax benefits u/s 80c, dffdsf, shriram life super income plan)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(10, https://slicsit.novactech.net/services/nav-history, nav history | shriram life insurance, nav hi...)">
+                  </a> <!-- shouldAnswerWithTrue(10, https://slicsit.novactech.net/services/nav-history, nav history | shriram life insurance, nav hi...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(10, https://slicsit.novactech.net/services/nav-history, nav history | shriram life insurance, nav history by shriram life insurance, dffdsf, nav history)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(35, https://slicsit.novactech.net/discover/about-us/public-disclosures, public disclosures | shriram...)">
+                  </a> <!-- shouldAnswerWithTrue(35, https://slicsit.novactech.net/discover/about-us/public-disclosures, public disclosures | shriram...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(35, https://slicsit.novactech.net/discover/about-us/public-disclosures, public disclosures | shriram life insurance, public disclosures in shriram life insurance, No excel data found, public disclosures)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(19, https://slicsit.novactech.net/services/nach-mandate-deactivation, nach mandate deactivation | sh...)">
+                  </a> <!-- shouldAnswerWithTrue(19, https://slicsit.novactech.net/services/nach-mandate-deactivation, nach mandate deactivation | sh...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(19, https://slicsit.novactech.net/services/nach-mandate-deactivation, nach mandate deactivation | shriram life insurance, nach mandate deactivation in shriram life insurance, dffdsf, nach mandate deactivation)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(6, https://slicsit.novactech.net/testimonials/customer-testimonials, customer testimonials | shriram...)">
+                  </a> <!-- shouldAnswerWithTrue(6, https://slicsit.novactech.net/testimonials/customer-testimonials, customer testimonials | shriram...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(6, https://slicsit.novactech.net/testimonials/customer-testimonials, customer testimonials | shriram life insurance, get to know the customer testimonials, dffdsf, alpabetical testimonials)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(25, https://slicsit.novactech.net/legal/data-privacy-policy, data privacy policy | shriram life insu...)">
+                  </a> <!-- shouldAnswerWithTrue(25, https://slicsit.novactech.net/legal/data-privacy-policy, data privacy policy | shriram life insu...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(25, https://slicsit.novactech.net/legal/data-privacy-policy, data privacy policy | shriram life insurance, learn more about the data privacy policy of shriram life, dffdsf, data privacy policy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(30, https://slicsit.novactech.net/blog, affordable insurance plan &amp; policies in india | shriram life...)">
+                  </a> <!-- shouldAnswerWithTrue(30, https://slicsit.novactech.net/blog, affordable insurance plan & policies in india | shriram life...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(30, https://slicsit.novactech.net/blog, affordable insurance plan & policies in india | shriram life, we, at shriram life, don't want you to get panic for yours & your loved one's future. read our blogs to learn how & where to invest your money for a secured output., dffdsf, blog)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(20, https://slicsit.novactech.net/services/online-dgh-submission, online dgh submission | shriram li...)">
+                  </a> <!-- shouldAnswerWithTrue(20, https://slicsit.novactech.net/services/online-dgh-submission, online dgh submission | shriram li...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(20, https://slicsit.novactech.net/services/online-dgh-submission, online dgh submission | shriram life insurance, online dgh submission in shriram life insurance, dffdsf, online dgh submission)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(18, https://slicsit.novactech.net/services/register-for-whatsapp, register for whatsapp | shriram li...)">
+                  </a> <!-- shouldAnswerWithTrue(18, https://slicsit.novactech.net/services/register-for-whatsapp, register for whatsapp | shriram li...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(18, https://slicsit.novactech.net/services/register-for-whatsapp, register for whatsapp | shriram life insurance, register for whatsapp by shriram life insurance, dffdsf, register for whatsapp)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(4, https://slicsit.novactech.net/contact-us/sales-service-enquiry, sales and service enquiry | shrir...)">
+                  </a> <!-- shouldAnswerWithTrue(4, https://slicsit.novactech.net/contact-us/sales-service-enquiry, sales and service enquiry | shrir...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(4, https://slicsit.novactech.net/contact-us/sales-service-enquiry, sales and service enquiry | shriram life insurance, speak to shriram life insurance company's experts for all your sales and service related queries. our branch locator helps you to find the nearest branch across india., dffdsf, sales and service enquiry)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(22, https://slicsit.novactech.net/discover/videos, videos | shriram life insurance, explore our life...)">
+                  </a> <!-- shouldAnswerWithTrue(22, https://slicsit.novactech.net/discover/videos, videos | shriram life insurance, explore our life...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(22, https://slicsit.novactech.net/discover/videos, videos | shriram life insurance, explore our life insurance plans & policy videos., dffdsf, videos)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(1, https://slicsit.novactech.net/, get life insurance plans &amp; policies online | shriram life insuran...)">
+                  </a> <!-- shouldAnswerWithTrue(1, https://slicsit.novactech.net/, get life insurance plans & policies online | shriram life insuran...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(1, https://slicsit.novactech.net/, get life insurance plans & policies online | shriram life insurance, shriram life offers a range of life insurance plans covering senior citizens, women, child and nris. choose the best savings, protection, retirement and child plans, dffdsf, let us help to you to choose the right life insurance plan)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(13, https://slicsit.novactech.net/life-insurance/assured-income-plan, assured income plan in india |...)">
+                  </a> <!-- shouldAnswerWithTrue(13, https://slicsit.novactech.net/life-insurance/assured-income-plan, assured income plan in india |...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(13, https://slicsit.novactech.net/life-insurance/assured-income-plan, assured income plan in india | shriram life insurance, buy assured income life insurance premium plan and track policy online. riders add-ons. get covered up to 70 years and also avail tax benefits u/s 80c, dffdsf, shriram life assured income plan)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(31, https://slicsit.novactech.net/smoking-calculator, smoking calculator | shriram life insurance, s...)">
+                  </a> <!-- shouldAnswerWithTrue(31, https://slicsit.novactech.net/smoking-calculator, smoking calculator | shriram life insurance, s...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(31, https://slicsit.novactech.net/smoking-calculator, smoking calculator | shriram life insurance, smoking have an impact on life insurance premium. get to know the approx. amount by checking the smoking calculator, No excel data found, smoking calculator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(2, https://slicsit.novactech.net/contact-us/faqs, frequently asked questions | shriram life insuranc...)">
+                  </a> <!-- shouldAnswerWithTrue(2, https://slicsit.novactech.net/contact-us/faqs, frequently asked questions | shriram life insuranc...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(2, https://slicsit.novactech.net/contact-us/faqs, frequently asked questions | shriram life insurance, shriram life compiled a list of frequently asked life insurance questions and answers, dffdsf, frequently asked questions(faq))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(26, https://slicsit.novactech.net/nri/nri-zone, nri zone | shriram life insurance, shriram life insu...)">
+                  </a> <!-- shouldAnswerWithTrue(26, https://slicsit.novactech.net/nri/nri-zone, nri zone | shriram life insurance, shriram life insu...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(26, https://slicsit.novactech.net/nri/nri-zone, nri zone | shriram life insurance, shriram life insurance offers life insurance with term plans. nris can reach us to know more about our plans and policies., dffdsf, nri zone)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(28, https://slicsit.novactech.net/life-insurance/retirement-calculator, retirement calculator | shri...)">
+                  </a> <!-- shouldAnswerWithTrue(28, https://slicsit.novactech.net/life-insurance/retirement-calculator, retirement calculator | shri...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(28, https://slicsit.novactech.net/life-insurance/retirement-calculator, retirement calculator | shriram life insurance, get to know your retirement plan life insurance premium amount by checking our innovative retirement calculator., dffdsf, retirement calculator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(16, https://slicsit.novactech.net/contact-us/branches, branch locator | shriram life insurance, loca...)">
+                  </a> <!-- shouldAnswerWithTrue(16, https://slicsit.novactech.net/contact-us/branches, branch locator | shriram life insurance, loca...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(16, https://slicsit.novactech.net/contact-us/branches, branch locator | shriram life insurance, locate the shriram life insurance branches nearby your location, dffdsf, branch locator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(32, https://slicsit.novactech.net/bmi-calculator, bmi calculator | shriram life insurance, our healt...)">
+                  </a> <!-- shouldAnswerWithTrue(32, https://slicsit.novactech.net/bmi-calculator, bmi calculator | shriram life insurance, our healt...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(32, https://slicsit.novactech.net/bmi-calculator, bmi calculator | shriram life insurance, our health have an impact on life insurance premium. get to know the approx. amount by checking the bmi calculator, No excel data found, bmi calculator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(11, https://slicsit.novactech.net/legal/become-an-advisor, become an advisor | shriram life insuranc...)">
+                  </a> <!-- shouldAnswerWithTrue(11, https://slicsit.novactech.net/legal/become-an-advisor, become an advisor | shriram life insuranc...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(11, https://slicsit.novactech.net/legal/become-an-advisor, become an advisor | shriram life insurance, register as an advisor in shriram life insurance, dffdsf, become an advisor)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(33, https://slicsit.novactech.net/double-your-money-calculator, double your money calculator | shrir...)">
+                  </a> <!-- shouldAnswerWithTrue(33, https://slicsit.novactech.net/double-your-money-calculator, double your money calculator | shrir...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(33, https://slicsit.novactech.net/double-your-money-calculator, double your money calculator | shriram life insurance, get to know our unique double your money calculator with our innovative tool, No excel data found, double your money calculator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(29, https://slicsit.novactech.net/life-insurance/child-plan-calculator, child plan calculator | shri...)">
+                  </a> <!-- shouldAnswerWithTrue(29, https://slicsit.novactech.net/life-insurance/child-plan-calculator, child plan calculator | shri...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(29, https://slicsit.novactech.net/life-insurance/child-plan-calculator, child plan calculator | shriram life insurance, get to know your child plans life insurance premium amount by checking our innovative tool, dffdsf, shriram life child plan calculator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(9, https://slicsit.novactech.net/services/unclaimed-amounts, unclaimed amounts | shriram life insura...)">
+                  </a> <!-- shouldAnswerWithTrue(9, https://slicsit.novactech.net/services/unclaimed-amounts, unclaimed amounts | shriram life insura...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(9, https://slicsit.novactech.net/services/unclaimed-amounts, unclaimed amounts | shriram life insurance, unclaimed amounts in shriram life insurance, dffdsf, unclaimed amounts)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue(27, https://slicsit.novactech.net/life-insurance/savings-plan-calculator, savings plan calculator | ...)">
+                  </a> <!-- shouldAnswerWithTrue(27, https://slicsit.novactech.net/life-insurance/savings-plan-calculator, savings plan calculator | ...) -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                  <span class="parameters">(27, https://slicsit.novactech.net/life-insurance/savings-plan-calculator, savings plan calculator | shriram life insurance, get to know your life insurance premium using our savings plan calculator, dffdsf, savings plan calculator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.samplepro.project.AppTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(35);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'shouldAnswerWithTrue')
+data.setCell(0, 2, 'com.samplepro.project.AppTest')
+data.setCell(0, 3, 48088);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'shouldAnswerWithTrue')
+data.setCell(1, 2, 'com.samplepro.project.AppTest')
+data.setCell(1, 3, 34649);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'shouldAnswerWithTrue')
+data.setCell(2, 2, 'com.samplepro.project.AppTest')
+data.setCell(2, 3, 34535);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'shouldAnswerWithTrue')
+data.setCell(3, 2, 'com.samplepro.project.AppTest')
+data.setCell(3, 3, 34334);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'shouldAnswerWithTrue')
+data.setCell(4, 2, 'com.samplepro.project.AppTest')
+data.setCell(4, 3, 33885);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'shouldAnswerWithTrue')
+data.setCell(5, 2, 'com.samplepro.project.AppTest')
+data.setCell(5, 3, 32704);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'shouldAnswerWithTrue')
+data.setCell(6, 2, 'com.samplepro.project.AppTest')
+data.setCell(6, 3, 32606);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'shouldAnswerWithTrue')
+data.setCell(7, 2, 'com.samplepro.project.AppTest')
+data.setCell(7, 3, 32538);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'shouldAnswerWithTrue')
+data.setCell(8, 2, 'com.samplepro.project.AppTest')
+data.setCell(8, 3, 32429);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'shouldAnswerWithTrue')
+data.setCell(9, 2, 'com.samplepro.project.AppTest')
+data.setCell(9, 3, 32262);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'shouldAnswerWithTrue')
+data.setCell(10, 2, 'com.samplepro.project.AppTest')
+data.setCell(10, 3, 32232);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'shouldAnswerWithTrue')
+data.setCell(11, 2, 'com.samplepro.project.AppTest')
+data.setCell(11, 3, 32224);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'shouldAnswerWithTrue')
+data.setCell(12, 2, 'com.samplepro.project.AppTest')
+data.setCell(12, 3, 32055);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'shouldAnswerWithTrue')
+data.setCell(13, 2, 'com.samplepro.project.AppTest')
+data.setCell(13, 3, 31905);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'shouldAnswerWithTrue')
+data.setCell(14, 2, 'com.samplepro.project.AppTest')
+data.setCell(14, 3, 31882);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'shouldAnswerWithTrue')
+data.setCell(15, 2, 'com.samplepro.project.AppTest')
+data.setCell(15, 3, 31822);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'shouldAnswerWithTrue')
+data.setCell(16, 2, 'com.samplepro.project.AppTest')
+data.setCell(16, 3, 31810);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'shouldAnswerWithTrue')
+data.setCell(17, 2, 'com.samplepro.project.AppTest')
+data.setCell(17, 3, 31798);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'shouldAnswerWithTrue')
+data.setCell(18, 2, 'com.samplepro.project.AppTest')
+data.setCell(18, 3, 31785);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'shouldAnswerWithTrue')
+data.setCell(19, 2, 'com.samplepro.project.AppTest')
+data.setCell(19, 3, 31763);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'shouldAnswerWithTrue')
+data.setCell(20, 2, 'com.samplepro.project.AppTest')
+data.setCell(20, 3, 31744);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'shouldAnswerWithTrue')
+data.setCell(21, 2, 'com.samplepro.project.AppTest')
+data.setCell(21, 3, 31721);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'shouldAnswerWithTrue')
+data.setCell(22, 2, 'com.samplepro.project.AppTest')
+data.setCell(22, 3, 31660);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'shouldAnswerWithTrue')
+data.setCell(23, 2, 'com.samplepro.project.AppTest')
+data.setCell(23, 3, 31656);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'shouldAnswerWithTrue')
+data.setCell(24, 2, 'com.samplepro.project.AppTest')
+data.setCell(24, 3, 31610);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'shouldAnswerWithTrue')
+data.setCell(25, 2, 'com.samplepro.project.AppTest')
+data.setCell(25, 3, 31591);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'shouldAnswerWithTrue')
+data.setCell(26, 2, 'com.samplepro.project.AppTest')
+data.setCell(26, 3, 31548);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'shouldAnswerWithTrue')
+data.setCell(27, 2, 'com.samplepro.project.AppTest')
+data.setCell(27, 3, 31509);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'shouldAnswerWithTrue')
+data.setCell(28, 2, 'com.samplepro.project.AppTest')
+data.setCell(28, 3, 31301);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'shouldAnswerWithTrue')
+data.setCell(29, 2, 'com.samplepro.project.AppTest')
+data.setCell(29, 3, 31266);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'shouldAnswerWithTrue')
+data.setCell(30, 2, 'com.samplepro.project.AppTest')
+data.setCell(30, 3, 31238);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'shouldAnswerWithTrue')
+data.setCell(31, 2, 'com.samplepro.project.AppTest')
+data.setCell(31, 3, 31186);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'shouldAnswerWithTrue')
+data.setCell(32, 2, 'com.samplepro.project.AppTest')
+data.setCell(32, 3, 31099);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'shouldAnswerWithTrue')
+data.setCell(33, 2, 'com.samplepro.project.AppTest')
+data.setCell(33, 3, 29932);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'shouldAnswerWithTrue')
+data.setCell(34, 2, 'com.samplepro.project.AppTest')
+data.setCell(34, 3, 25442);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 18 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.samplepro.project.AppTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">browserExe</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(1, https://slicsit.novactech.net/, get life insurance plans & policies online | shriram life insuran...)</span>
+                <span class="method-start">13493 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(2, https://slicsit.novactech.net/contact-us/faqs, frequently asked questions | shriram life insuranc...)</span>
+                <span class="method-start">48143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(3, https://slicsit.novactech.net/contact-us/service-request, service request | shriram life insuranc...)</span>
+                <span class="method-start">80199 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(4, https://slicsit.novactech.net/contact-us/sales-service-enquiry, sales and service enquiry | shrir...)</span>
+                <span class="method-start">112022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(5, https://slicsit.novactech.net/services/aadhaar-ekyc-consent-revoking, aadhaar e-kyc consent revok...)</span>
+                <span class="method-start">143833 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(6, https://slicsit.novactech.net/testimonials/customer-testimonials, customer testimonials | shriram...)</span>
+                <span class="method-start">175446 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(7, https://slicsit.novactech.net/legal/terms-and-conditions, terms and conditions | shriram life ins...)</span>
+                <span class="method-start">207709 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(8, https://slicsit.novactech.net/404, 404 error | shriram life insurance, 404 error in the website. ...)</span>
+                <span class="method-start">239474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(9, https://slicsit.novactech.net/services/unclaimed-amounts, unclaimed amounts | shriram life insura...)</span>
+                <span class="method-start">264917 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(10, https://slicsit.novactech.net/services/nav-history, nav history | shriram life insurance, nav hi...)</span>
+                <span class="method-start">296717 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(11, https://slicsit.novactech.net/legal/become-an-advisor, become an advisor | shriram life insuranc...)</span>
+                <span class="method-start">327904 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(12, https://slicsit.novactech.net/life-insurance/super-income-plan, super income plan in india | shr...)</span>
+                <span class="method-start">360137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(13, https://slicsit.novactech.net/life-insurance/assured-income-plan, assured income plan in india |...)</span>
+                <span class="method-start">391793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(14, https://slicsit.novactech.net/life-insurance/savings-plan, shriram life insurance premium saving...)</span>
+                <span class="method-start">421726 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(15, https://slicsit.novactech.net/reach-us, reach us | shriram life insurance, you can reach us by t...)</span>
+                <span class="method-start">453470 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(16, https://slicsit.novactech.net/contact-us/branches, branch locator | shriram life insurance, loca...)</span>
+                <span class="method-start">486078 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(17, https://slicsit.novactech.net/services/grievance-redressal, grievance redressal | shriram life i...)</span>
+                <span class="method-start">517960 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(18, https://slicsit.novactech.net/services/register-for-whatsapp, register for whatsapp | shriram li...)</span>
+                <span class="method-start">550665 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(19, https://slicsit.novactech.net/services/nach-mandate-deactivation, nach mandate deactivation | sh...)</span>
+                <span class="method-start">598754 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(20, https://slicsit.novactech.net/services/online-dgh-submission, online dgh submission | shriram li...)</span>
+                <span class="method-start">630659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(21, https://slicsit.novactech.net/discover/media/press-coverage, press coverage | shriram life insur...)</span>
+                <span class="method-start">662168 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(22, https://slicsit.novactech.net/discover/videos, videos | shriram life insurance, explore our life...)</span>
+                <span class="method-start">693889 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(23, https://slicsit.novactech.net/discover/careers, careers | shriram life insurance, explore our sh...)</span>
+                <span class="method-start">726427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(24, https://slicsit.novactech.net/legal/do-not-call, do not call | shriram life insurance, do not ca...)</span>
+                <span class="method-start">760761 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(25, https://slicsit.novactech.net/legal/data-privacy-policy, data privacy policy | shriram life insu...)</span>
+                <span class="method-start">791861 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(26, https://slicsit.novactech.net/nri/nri-zone, nri zone | shriram life insurance, shriram life insu...)</span>
+                <span class="method-start">823409 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(27, https://slicsit.novactech.net/life-insurance/savings-plan-calculator, savings plan calculator | ...)</span>
+                <span class="method-start">854711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(28, https://slicsit.novactech.net/life-insurance/retirement-calculator, retirement calculator | shri...)</span>
+                <span class="method-start">888596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(29, https://slicsit.novactech.net/life-insurance/child-plan-calculator, child plan calculator | shri...)</span>
+                <span class="method-start">919834 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(30, https://slicsit.novactech.net/blog, affordable insurance plan & policies in india | shriram life...)</span>
+                <span class="method-start">952059 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(31, https://slicsit.novactech.net/smoking-calculator, smoking calculator | shriram life insurance, s...)</span>
+                <span class="method-start">984489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(32, https://slicsit.novactech.net/bmi-calculator, bmi calculator | shriram life insurance, our healt...)</span>
+                <span class="method-start">1016149 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(33, https://slicsit.novactech.net/double-your-money-calculator, double your money calculator | shrir...)</span>
+                <span class="method-start">1047416 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(34, https://slicsit.novactech.net/hlv-calculator, new hlv calculator | shriram life insurance, get t...)</span>
+                <span class="method-start">1079202 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">shouldAnswerWithTrue(35, https://slicsit.novactech.net/discover/about-us/public-disclosures, public disclosures | shriram...)</span>
+                <span class="method-start">1110794 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">driver_close</span>
+                <span class="method-start">1145333 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
